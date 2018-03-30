@@ -6,8 +6,8 @@ Having an SSL certificate for a domain allows to use HTTPS instead of HTTP for t
 
 Use the following:
 
-- [Let's Encrypt](https://letsencrypt.org/): a free certificate authority.
-- [Certbot](https://certbot.eff.org/): a tool for verifying domain ownership and creating Let's Encrypt-signed certificates and private keys.
+- [Let's Encrypt](https://letsencrypt.org/): a free and automated certificate authority.
+- [Certbot](https://certbot.eff.org/): an [ACME](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) client (for automated domain validation and certificate issuance).
 
 This solution is completely free.
 
@@ -27,3 +27,18 @@ For example, if domain `sent2vec.quantumsense.ai` resolves to host `A`, then, on
 ## Security
 
 The private key files in this repository are encrypted with PGP using [git-secret](https://github.com/sobolevn/git-secret).
+
+
+## Other ways to get free SSL certificates
+
+[AWS Certificate Manager (ACM)](https://aws.amazon.com/certificate-manager/) allows to create free SSL certificates as well. However, these certificates can only be used within AWS, and only for specific AWS services.
+
+Currently, the services for which ACM-generated certificates can be used include (see [here](https://aws.amazon.com/certificate-manager/faqs/)):
+
+- Elastic Load Balancing
+- Amazon CloudFront
+- Amazon API Gateway
+- AWS Elastic Beanstalk
+- AWS CloudFormation
+
+ACM-generated certificates cannot be used outside of AWS. In particular, it is possible to export the certificate, but it is not possible to export the corresponding private key (see [here](https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate.html) and [here](https://www.reddit.com/r/aws/comments/5ov7rd/acmkms_is_it_possible_to_obtain_the_private_key/)).
