@@ -1,6 +1,6 @@
-# SSL Certificates
+# TLS Server Certificates
 
-Having an SSL certificate for a domain allows to use HTTPS instead of HTTP for the application that is pointed to by this domain.
+Having a TLS server certificate for a domain allows to use HTTPS instead of HTTP for the application that is pointed to by this domain.
 
 ## How to create an SSL certificate and private key for a domain
 
@@ -29,9 +29,9 @@ For example, if domain `sent2vec.quantumsense.ai` resolves to host `A`, then, on
 The private key files in this repository are encrypted with PGP using [git-secret](https://github.com/sobolevn/git-secret).
 
 
-## Other ways to get free SSL certificates
+## Other ways to get free public key certificates
 
-[AWS Certificate Manager (ACM)](https://aws.amazon.com/certificate-manager/) allows to create free SSL certificates as well. However, these certificates can only be used within AWS, and only for specific AWS services.
+[AWS Certificate Manager (ACM)](https://aws.amazon.com/certificate-manager/) allows to create free certificates as well. However, these certificates can only be used within AWS, and only for specific AWS services.
 
 Currently, the services for which ACM-generated certificates can be used include (see [here](https://aws.amazon.com/certificate-manager/faqs/)):
 
