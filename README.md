@@ -15,8 +15,8 @@ This solution is completely free.
 
 1. Log in to the machine that the desired domain points to (you must have set up DNS records already).
 2. Make sure that port 80 is free on this machine (if you don't use one of the supported web servers listed on <https://certbot.eff.org/>)
-3. Follow the instructions on <https://certbot.eff.org/lets-encrypt/ubuntuxenial-other> (select software and OS appropriately).
-4. If everything works, certbot creates and saves the certificate and private key as `.pem` files on the local file system.
+3. Follow the instructions on <https://certbot.eff.org/lets-encrypt/ubuntuxenial-other> (or select software and OS appropriately).
+4. If everything works, certbot creates and saves the certificate and private key as `.pem` files under the directory `/etc/letsencrypt/live` on the local file system.
 
 ### Notes
 
