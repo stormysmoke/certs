@@ -28,6 +28,9 @@ For example, if domain `sent2vec.quantumsense.ai` resolves to host `A`, then, on
 
 The private key files in this repository are encrypted with PGP using [git-secret](https://github.com/sobolevn/git-secret).
 
+git-secret requires [GnuPG](https://www.gnupg.org/) to be installed on the local system.
+
+For compatibility across machines and operating systems, use **GnuPG 1.4** (for example, GnuPG 1.4.20), and not a higher version.
 
 ## Other ways to get free public key certificates
 
